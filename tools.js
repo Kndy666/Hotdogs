@@ -169,13 +169,16 @@ window.onload = function () {
     }, 10)
 
     document.onkeydown = function (ev) {
-        if (ev.keyCode == 37) {
+		if (time2 >= 1) {
+			if (ev.keyCode == 37) {
             hero.x -= 10;
             hero.paint(ctx);
-        }
+			}
         if (ev.keyCode == 39) {
             hero.x += 10;
             hero.paint(ctx);
-        }
+			}
+		}
+        
     }
 }
